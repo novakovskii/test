@@ -1,0 +1,33 @@
+.modal{
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: $overlay;
+  display: none;
+  &--opened{
+    display: block;
+  }
+}
+
+.modal__text{
+  padding: 30px;
+  width: 360px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: $white;
+  border-radius: 20px;
+  p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}

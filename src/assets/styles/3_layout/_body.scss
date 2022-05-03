@@ -1,0 +1,9 @@
+body{
+  font-family: 'Avenir Next';
+  color: $dark;
+  background: $white;
+  overflow-x: hidden;
+  &.noscroll{
+    overflow: hidden;
+  }
+}

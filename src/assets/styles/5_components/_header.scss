@@ -1,0 +1,280 @@
+.header{
+  width: 100%;
+  background: $white;
+  margin-bottom: 55px;
+  position: relative;
+  z-index: 999;
+  &--fixed{
+    position: fixed;
+    top: 0;
+  }
+}
+
+.header__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: $white;
+}
+
+.header__logo{
+  width: 130px;
+  height: 20px;
+}
+
+.header__menu{
+  display: flex;
+  flex: 1;
+  margin-left: 75px;
+}
+
+.header__menu-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header__nav-list{
+    display: flex;
+    margin-left: 10px;
+}
+
+.header__nav-item{
+  margin-left: 39px;
+  &:first-child{
+    margin-left: 0;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: $transition;
+  }
+  &:hover{
+    a{
+      color: $grey-light;
+    }
+  }
+  &--active{
+    a{
+      color: $blue;
+    }
+  }
+}
+
+.header__nav-contacts{
+  display: none;
+}
+
+.header__language-list{
+  display: flex;
+  margin-left: 10px;
+}
+
+.header__language-item{
+  margin-left: 12px;
+  &:first-child{
+    margin-left: 0;
+  }
+  a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 16px;
+    opacity: 0.5;
+  }
+  &:hover{
+    a{
+      background: $gradient-dark;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 1;
+    }
+  }
+  &--active{
+    a{
+      background: $gradient-dark;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      opacity: 1;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        background: $gradient-dark;
+      }
+    }
+  }
+}
+
+.header__connect{
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-left: 10px;
+  a{
+    
+  }
+}
+
+.header__burger{
+  display: none;
+}
+
+@media (max-width: map-get($container, lg) + 59) {
+
+  .header{
+    width: 100%;
+    background: $white;
+    margin-bottom: 48px;
+  }
+  
+  .header__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: $white;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    flex-wrap: wrap;
+  }
+
+  .header__menu{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: unset;
+    flex: unset;
+    width: 100%;
+    height: calc(100vh - 100%);
+    order: 3;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: $white;
+    &--opened{
+      display: flex;
+    }
+  }
+
+  .header__menu-wrapper{
+    overflow: auto;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .header__nav-list{
+      margin-left: unset;
+      flex-direction: column;
+  }
+  
+  .header__nav-item{
+    margin-left: unset;
+    margin-bottom: 32px;
+    &:first-child{
+      margin-left: unset;
+    }
+    a{
+      color: $grey;
+      text-decoration: none;
+      font-size: 24px;
+      font-weight: 500px;
+      white-space: nowrap;
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+    }
+    &:hover{
+      a{
+        color: $grey-light;
+      }
+    }
+    &--active{
+      a{
+        color: $blue;
+      }
+    }
+  }
+
+  .header__nav-contacts{
+    display: block;
+  }
+  
+  .header__language-list{
+    display: none;
+  }
+  
+  .header__connect{
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-left: unset;
+  }
+  
+  .header__burger{
+    display: block;
+    background: none;
+    border: none;
+    position: relative;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+    &::before{
+      transition: all .1s ease-in-out;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3.54px;
+      background: $burger;
+      left: 0;
+      top: 7px;
+    }
+    &::after{
+      transition: all .1s ease-in-out;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3.54px;
+      background: $burger;
+      left: 0;
+      bottom: 7px;
+    }
+    &--opened{
+      &::before{
+        transform: translateY(-50%) rotate(45deg);
+        left: 0;
+        top: 50%;
+      }
+      &::after{
+        transform: translateY(50%) rotate(-45deg);
+        left: 0;
+        bottom: 50%;
+      }
+    }
+  }
+
+}
+
+@media (max-width: map-get($container, sm) + 59) {
+
+  .header{
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+
+  .header__wrapper{
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .header__logo{
+    width: 97px;
+    height: 15px;
+  }
+
+}

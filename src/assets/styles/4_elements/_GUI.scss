@@ -1,0 +1,80 @@
+.btn{
+  padding: 13px 0;
+  font-size: 16px;
+  border-radius: 44px;
+  cursor: pointer;
+  position: relative;
+  transition: $transition;
+  &--blue{
+    background: $gradient-dark;
+    color: $white;
+    border: none;
+  }
+  &--white{
+    background: $gradient-white, $gradient-dark;
+    border: 1px solid transparent;
+    span{
+      background: $gradient-dark;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &:hover{
+    box-shadow: $shadow;
+  }
+}
+
+.input{
+  background: $blue-light;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 44px;
+  &::placeholder{
+    color: $blue;
+    opacity: 0.4;
+  }
+  &:focus{
+    outline: none;
+  }
+  &--white{
+    background: $white;
+    border: 1px solid $blue-transparent;
+    &::placeholder{
+      color: $blue;
+      opacity: 0.6;
+    }
+  }
+  &--error{
+    border: 1px solid $red;
+    &::placeholder{
+      color: $red;
+    }
+  }
+}
+
+.input__error-message{
+  color: red;
+  margin-bottom: 20px;
+}
+
+.textarea{
+  background: $white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  border: 1px solid $blue-transparent;
+  resize: none;
+  &::placeholder{
+    color: $blue;
+    opacity: 0.6;
+  }
+  &:focus{
+    outline: none;
+  }
+  &--error{
+    border: 1px solid $red;
+    &::placeholder{
+      color: $red;
+    }
+  }
+}

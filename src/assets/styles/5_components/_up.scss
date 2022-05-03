@@ -1,0 +1,22 @@
+.up{
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  cursor: pointer;
+  transition: $transition;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  &--show{
+    opacity: 0.6;
+    pointer-events: all;
+    &:hover{
+      opacity: 0.2;
+    }
+  }
+}

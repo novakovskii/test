@@ -1,0 +1,24 @@
+.main__title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  margin-bottom: 28px;
+}
+
+@media (max-width: map-get($container, lg) + 59) {
+
+  .main__title{
+    text-align: center;
+  }
+
+}
+
+@media (max-width: map-get($container, sm) + 59) {
+
+  .main__title{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+}

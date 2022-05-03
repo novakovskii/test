@@ -1,0 +1,120 @@
+.purpose{
+  position: relative;
+  margin-top: 160px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 817px;
+    height: 559px;
+    background-image: url(assets/images/static/checks.svg);
+    right: -350px;
+    bottom: -250px;
+    z-index: -1;
+  }
+}
+
+.purpose__wrapper{
+  margin-top: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  box-sizing: border-box;
+}
+
+.purpose__card{
+  padding-left: 30px;
+  flex: 33.3%;
+  max-width: 33.3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: 13px;
+    width: 70%;
+  }
+}
+
+.purpose__card-image{
+  height: 160px;
+}
+
+.purpose__card-title{
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 40px;
+  width: 70%;
+}
+
+@media (max-width: map-get($container, lg) + 59) {
+
+  .purpose{
+    margin-top: 110px;
+    &::before{
+      display: none;
+    }
+  }
+  
+  .purpose__wrapper{
+    margin-top: 70px;
+    margin-left: -20px;
+  }
+  
+  .purpose__card{
+    padding-left: 20px;
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 24px;
+      width: 100%;
+    }
+  }
+  
+  .purpose__card-image{
+    height: 145px;
+  }
+  
+  .purpose__card-title{
+    margin-top: 30px;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: map-get($container, sm) + 59) {
+  
+  .purpose__wrapper{
+    margin-top: 70px;
+    margin-left: 0;
+  }
+  
+  .purpose__card{
+    padding-left: 0;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+    &:last-child{
+      margin: 0;
+    }
+    p{
+      margin-top: 12px;
+      text-align: center;
+      width: 200px;
+    }
+  }
+  
+  .purpose__card-image{
+    height: 140px;
+  }
+  
+  .purpose__card-title{
+    text-align: center;
+    width: 200px;
+  }
+
+}

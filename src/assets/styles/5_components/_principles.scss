@@ -1,0 +1,247 @@
+.principles{
+  margin-top: 150px;
+}
+
+.principles__wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 90px;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 347px;
+    height: 419px;
+    background-image: url(assets/images/static/graph.svg);
+    left: -150px;
+    top: 20px;
+    z-index: -1;
+  }
+}
+
+.principles__card{
+  padding-left: 30px;
+  flex: 33.3%;
+  max-width: 33.3%;
+  box-sizing: border-box;
+  p{
+    text-align: center;
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+.principles__image{
+  height: 140px;
+  position: relative;
+  img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.principles__automation{
+  display: flex;
+  padding: 60px 95px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 140px;
+  & .input{
+    border-right: none;
+    border-radius: 44px 0 0 44px;
+  }
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: $blue-light;
+  }
+  &::after{
+    content: '';
+    position: absolute;
+    width: 347px;
+    height: 419px;
+    background-image: url(assets/images/static/graph.svg);
+    right: 84px;
+    top: 20px;
+    z-index: -1;
+  }
+  p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 60px;
+  }
+}
+
+.principles__automation-title{
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.principles__automation-btn{
+  padding-left: 53px;
+  padding-right: 53px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    border: 1px solid $blue-transparent;
+    box-sizing: border-box;
+    z-index: -1;
+    left: -50%;
+    top: 0;
+  }
+}
+
+@media (max-width: map-get($container, lg) + 59) {
+
+  .principles{
+    margin-top: 110px;
+  }
+  
+  .principles__wrapper{
+    margin-left: -20px;
+    margin-top: 70px;
+    &::before{
+      display: none;
+    }
+  }
+  
+  .principles__card{
+    padding-left: 20px;
+    p{
+      margin-top: 22px;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  
+  .principles__image{
+    height: 98px;
+    img{
+      max-width: 100%;
+      max-height: 100%;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .principles__automation{
+    margin-top: 110px;
+    padding: 60px 95px;
+    flex-direction: column;
+    & .input{
+      flex: 1;
+    }
+    &::after{
+      right: -20px;
+      top: 20px;
+    }
+    p{
+      margin-bottom: 48px;
+      width: 100%;
+    }
+  }
+
+  .principles__automation-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+  }
+  
+  .principles__automation-title{
+    text-align: center;
+  }
+  
+}
+
+@media (max-width: map-get($container, sm) + 59) {
+
+  .principles{
+    margin-top: 92px;
+  }
+  
+  .principles__wrapper{
+    margin-left: 0;
+    margin-top: 40px;
+  }
+  
+
+  .principles__card{
+    padding-left: 0;
+    flex: 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    p{
+      margin-top: 10px;
+    }
+  }
+  
+  .principles__automation{
+    margin-top: 45px;
+    flex-direction: column;
+    overflow: visible;
+    padding: 60px 0;
+    &::before{
+      width: 100vw;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    &::after{
+      width: 203px;
+      height: 244px;
+      background-image: url(assets/images/static/graph-mobile.svg);
+      right: -120px;
+    }
+    p{
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  .principles__automation-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12px;
+    & .input{
+      width: 50px;
+    }
+  }
+  
+  .principles__automation-title{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 36px
+  }
+
+  .principles__automation-btn{
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+}

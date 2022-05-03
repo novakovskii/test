@@ -1,0 +1,144 @@
+.tariffs{
+  display: flex;
+  align-items: center;
+  margin-top: 160px;
+  justify-content: space-between;
+}
+
+.tariffs__content{
+  width: 50%;
+  p{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 40px;
+  }
+}
+
+.tariffs__form{
+  width: 440px;
+}
+
+.tariffs__btn{
+  padding-left: 53px;
+  padding-right: 53px;
+  position: relative;
+  &::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $blue-light;
+    z-index: -1;
+    left: -50%;
+    top: 0;
+  }
+}
+
+.tariffs__image{
+  &--desktop{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  &--adaptive{
+    display: none;
+  }
+  img{
+    width: 100%;
+  }
+}
+
+@media (max-width: map-get($container, lg) + 59) {
+
+  .tariffs{
+    flex-direction: column;
+    margin-top: 110px;
+    h2{
+      width: 100%;
+      margin-bottom: 70px;
+    }
+  }
+  
+  .tariffs__content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+
+  .tariffs__form{
+    order: 4;
+    margin-top: 22px;
+  }
+
+  .tariffs__text{
+    width: 60%;
+  }
+  
+  .tariffs__image{
+    &--desktop{
+      display: none;
+    }
+    &--adaptive{
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      order: 3;
+    }
+  }
+
+}
+
+@media (max-width: map-get($container, sm) + 59) {
+
+  .tariffs{
+    margin-top: 70px;
+    h2{
+      margin-bottom: 40px;
+      margin-top: 46px;
+      order: 2;
+      width: 100%;
+    }
+  }
+  
+  .tariffs__content{
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tariffs__form{
+    order: 4;
+    margin-top: 0;
+    width: 100%;
+    display: flex;
+    & .input{
+      width: 50px;
+      flex: 1;
+    }
+  }
+
+  .tariffs__text{
+    width: 100%;
+    order: 3;
+  }
+  
+  .tariffs__image{
+    &--adaptive{
+      width: 190px;
+      order: 1;
+    }
+  }
+
+  .tariffs__btn{
+    padding-left: 26px;
+    padding-right: 26px;
+  }
+
+}

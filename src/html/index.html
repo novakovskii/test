@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.min.css">
+  <title>Adict-test</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header__wrapper container">
+      <a href="/" class="header__logo">
+        <img src="/assets/images/static/logo.svg" alt="Logo">
+      </a>
+      <div class="header__menu">
+        <div class="header__menu-wrapper">
+          <nav class="header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-item"><a href="#principles">Как это работает?</a></li>
+              <li class="header__nav-item"><a href="#purpose">Для кого</a></li>
+              <li class="header__nav-item"><a href="#cases">Кейсы</a></li>
+              <li class="header__nav-item"><a href="#tariffs">Тарифы</a></li>
+              <li class="header__nav-item"><a href="#security">Безопасность</a></li>
+              <li class="header__nav-item header__nav-contacts"><a href="#footer">Контакты</a></li>
+            </ul>
+          </nav>
+          <ul class="header__language-list">
+            <li class="header__language-item header__language-item--active"><a href="#">RU</a></li>
+            <li class="header__language-item"><a href="#">EN</a></li>
+          </ul>
+          <button class="header__connect btn btn--white"><span>Подключиться</span></button>
+        </div>
+      </div>
+      <button class="header__burger"></button>
+    </div>
+  </header>
+
+  <main class="main container">
+    
+    <section class="swiper slider">
+        <div class="slider__wrapper swiper-wrapper">
+          <div class="slider__slide swiper-slide">
+            <div class="slider__text">
+              <div class="slider__title">Не пропускайте важные оплаты</div>
+              <p>Если от них зависят ваши проекты или старт рекламных кампаний</p>
+              <form class="slider__form">
+                <input type="text" class="input" placeholder="Введите email">
+                <button class="slider__btn btn btn--blue">Узнать</button>
+              </form>
+            </div>
+            <div class="slider__image">
+              <picture>
+                <source srcset="assets/images/static/m-swiper-img-1.png" media="(max-width: 699px)">
+                <img srcset="assets/images/static/swiper-img-1.png" alt="Slide">
+              </picture>
+            </div>
+            <div></div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__text">
+              <div class="slider__title">Сократите издержки на бухгалтерию и коммуникации</div>
+              <p>Получайте информацию о платежах на счет компании там, где вам удобно</p>
+              <form class="slider__form">
+                <input type="text" class="input" placeholder="Введите email">
+                <button class="slider__btn btn btn--blue">Узнать</button>
+              </form>
+            </div>
+            <div class="slider__image">
+              <picture>
+                <source srcset="assets/images/static/m-swiper-img-2.png" media="(max-width: 699px)">
+                <img srcset="assets/images/static/swiper-img-2.png" alt="Slide">
+              </picture>
+            </div>
+            <div></div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__text">
+              <div class="slider__title">Создавайте собственные сценарии действий</div>
+              <p>при поступлении денег на счет вашей компании</p>
+              <form class="slider__form">
+                <input type="text" class="input" placeholder="Введите email">
+                <button class="slider__btn btn btn--blue">Узнать</button>
+              </form>
+            </div>
+            <div class="slider__image">
+              <picture>
+                <source srcset="assets/images/static/m-swiper-img-3.png" media="(max-width: 699px)">
+                <img srcset="assets/images/static/swiper-img-3.png" alt="Slide">
+              </picture>
+            </div>
+            <div></div>
+          </div>
+          <div class="slider__slide swiper-slide">
+            <div class="slider__text">
+              <div class="slider__title">Реагируйте на платежи так быстро, как они поступают на ваш счет</div>
+              <form class="slider__form">
+                <input type="text" class="input" placeholder="Введите email">
+                <button class="slider__btn btn btn--blue">Узнать</button>
+              </form>
+            </div>
+            <div class="slider__image">
+              <picture>
+                <source srcset="assets/images/static/m-swiper-img-4.png" media="(max-width: 699px)">
+                <img srcset="assets/images/static/swiper-img-4.png" alt="Slide">
+              </picture>
+            </div>
+            <div></div>
+          </div>
+        </div>
+    </section>
+
+    <section class="suggest">
+      <div class="suggest__image">
+        <picture>
+          <source srcset="assets/images/static/m-suggest-img.png" media="(max-width: 699px)">
+          <img srcset="assets/images/static/suggest-img.png" alt="Suggest">
+        </picture>
+      </div>
+      <div class="suggest__text">
+        <div class="suggest__title">Мы предлагаем вам простой инструмент, чтобы автоматизировать информирование о поступающих оплатах.</div>
+        <p>Бухгалтер на карантине, а директор недоступен? Ответственный сотрудник моментально узнает о поступлении денег на счет компании.</p>
+      </div>
+    </section>
+
+    <section class="principles" id="principles">
+      <h2 class="main__title">Как это работает</h2>
+      <div class="principles__wrapper">
+        <div class="principles__card">
+          <div class="principles__image">
+            <img src="assets/images/static/principles-img-1.png" alt="">
+          </div>
+          <p>Подключите свой<br> банковский счет</p>
+        </div>
+        <div class="principles__card">
+          <div class="principles__image">
+            <img src="assets/images/static/principles-img-2.png" alt="">
+          </div>
+          <p>Выберите, куда и кому<br> отправлять информацию</p>
+        </div>
+        <div class="principles__card">
+          <div class="principles__image">
+            <img src="assets/images/static/principles-img-3.png" alt="">
+          </div>
+          <p>Получайте информацию<br> о поступивших оплатах</p>
+        </div>
+      </div>
+      <div class="principles__automation">
+        <div class="principles__automation-title">Автоматизируйте бизнес-процессы</div>
+        <form class="principles__automation-form">
+          <p>Подключайте привычные приложения, которые вы используете в работе.</p>
+          <input type="text" class="input input--white" placeholder="Введите email">
+          <button class="principles__automation-btn btn btn--blue">Узнать</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="clients">
+      <h2 class="main__title">Банки и интеграции</h2>
+      <div class="clients__wrapper">
+        <div class="clients__card-wrapper">
+          <div class="clients__card">
+            <div class="clients__card-title">Банки</div>
+            <div class="clients__card-container">
+              <div class="clients__card-bank">
+                <img src="assets/images/static/bank-1.png" alt="Bank">
+              </div>
+              <div class="clients__card-bank">
+                <img src="assets/images/static/bank-2.png" alt="Bank">
+              </div>
+              <div class="clients__card-bank">
+                <img src="assets/images/static/bank-3.png" alt="Bank">
+              </div>
+              <div class="clients__hr-line"></div>
+              <div class="clients__item">
+                <div class="clients__item-img">
+                  <img src="assets/images/static/icon-1.png" alt="Icon">
+                </div>
+                <div class="clients__item-text">Загрузка из 1С</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clients__card-wrapper">
+          <div class="clients__card clients__card--integrations">
+            <div class="clients__card-title">Интеграции</div>
+            <div class="clients__card-container">
+              <div class="clients__item">
+                <div class="clients__item-img">
+                  <img src="assets/images/static/icon-2.png" alt="Icon">
+                </div>
+                <div class="clients__item-text">Push-web уведомления</div>
+              </div>
+              <div class="clients__item">
+                <div class="clients__item-img">
+                  <img src="assets/images/static/icon-3.png" alt="Icon">
+                </div>
+                <div class="clients__item-text">E-mail уведомления</div>
+              </div>
+              <div class="clients__item">
+                <div class="clients__item-img">
+                  <img src="assets/images/static/icon-4.png" alt="Icon">
+                </div>
+                <div class="clients__item-text">Telegram</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="purpose" id="purpose">
+      <h2 class="main__title">Для кого</h2>
+      <div class="purpose__wrapper">
+        <div class="purpose__card">
+          <div class="purpose__card-image">
+            <img src="assets/images/static/purpose-1.png" alt="Purpose">
+          </div>
+          <div class="purpose__card-title">Малый бизнес</div>
+          <p>Скорость получения информации о платежах и минимизация издержек</p>
+        </div>
+        <div class="purpose__card">
+          <div class="purpose__card-image">
+            <img src="assets/images/static/purpose-2.png" alt="Purpose">
+          </div>
+          <div class="purpose__card-title">Стартапы</div>
+          <p>Автоматизация бизнес-процессов и бухгалтерской рутины</p>
+        </div>
+        <div class="purpose__card">
+          <div class="purpose__card-image">
+            <img src="assets/images/static/purpose-3.png" alt="Purpose">
+          </div>
+          <div class="purpose__card-title">Разработчики</div>
+          <p>Быстрое внедрение своих приложений для малого бизнеса и стартапов</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cases" id="cases">
+      <h2 class="main__title">Кейсы</h2>
+      <div class="swiper cases__slider">
+        <div class="cases__wrapper">
+          <div class="cases__slide">
+            <div class="cases__card">
+              <div class="cases__card-item-container">
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-1.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-2.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-3.png" alt="Item">
+                </div>
+              </div>
+              <p>Автоматизация диджитал-агентства</p>
+              <div class="cases__link">
+                <a href="#">Читать кейс</a>
+              </div>
+            </div>
+          </div>
+          <div class="cases__slide">
+            <div class="cases__card">
+              <div class="cases__card-item-container">
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-1.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-2.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-4.png" alt="Item">
+                </div>
+              </div>
+              <p>Приём платежей в рекламной медиа-группе</p>
+              <div class="cases__link">
+                <a href="#">Читать кейс</a>
+              </div>
+            </div>
+          </div>
+          <div class="cases__slide">
+            <div class="cases__card">
+              <div class="cases__card-item-container">
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-1.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-2.png" alt="Item">
+                </div>
+                <div class="cases__card-item">
+                  <img src="assets/images/static/cases-item-4.png" alt="Item">
+                </div>
+              </div>
+              <p>Оптимизация бухгалтерии в производственной компании</p>
+              <div class="cases__link">
+                <a href="#">Читать кейс</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cases__pagination"></div>
+      </div>
+    </section>
+
+    <section class="tariffs" id="tariffs">
+      <div class="tariffs__content">
+        <h2 class="main__title">Тарифы</h2>
+        <div class="tariffs__text">
+          <p>Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться к тестированию сервиса.</p>
+          <p>Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.</p>
+        </div>
+        <form class="tariffs__form">
+          <input type="text" class="input" placeholder="Введите email">
+          <button class="tariffs__btn btn btn--blue">Узнать</button>
+        </form>
+        <div class="tariffs__image tariffs__image--adaptive">
+          <picture>
+            <source srcset="assets/images/static/m-tariffs-img.png" media="(max-width: 699px)">
+            <img srcset="assets/images/static/t-tariffs-img.png" alt="Suggest">
+          </picture>
+        </div>
+      </div>
+      <div class="tariffs__image tariffs__image--desktop">
+        <img src="assets/images/static/tariffs-img.png" alt="Tariffs">
+      </div>
+    </section>
+
+    <section class="soon">
+      <h2 class="main__title">Скоро появится</h2>
+      <ul class="soon__list">
+        <li class="soon__item">
+          <div class="soon__title">Интеграции с CRM-системами Битрикс 24 и amoCRM</div>
+          <div class="soon__text">
+            <p>Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p>
+            <div class="soon__icon-container">
+              <div class="soon__icon">
+                <img src="assets/images/static/soon-icon-1.png" alt="Icon">
+              </div>
+              <div class="soon__icon">
+                <img src="assets/images/static/soon-icon-2.png" alt="Icon">
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="soon__item">
+          <div class="soon__title">Открытое API Everypay</div>
+          <div class="soon__text">
+            <p>Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay</p>
+          </div>
+        </li>
+        <li class="soon__item">
+          <div class="soon__title">Автоматическое создание платежек</div>
+          <div class="soon__text">
+            <p>Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы</p>
+          </div>
+        </li>
+      </ul>
+      <div class="soon__more">И еще 17 нововведений</div>
+    </section>
+
+    <section class="security" id="security">
+      <div class="security__image security__image--desktop">
+        <img src="assets/images/static/security.png" alt="Security">
+      </div>
+      <div class="security__content">
+        <h2 class="main__title">Безопасность</h2>
+        <p>Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только для получения выписок», а хранение информации в системе защищено и деперсонализировано.</p>
+        <div class="security__image security__image--adaptive">
+          <img src="assets/images/static/t-security.png" alt="Security">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__wrapper container">
+      <h2 class="main__title">Подключиться</h2>
+      <div class="footer__contact-container">
+        <div class="footer__contact-text">
+          <p>Хотите начать пользоваться системой? Напишите нам.</p>
+          <div class="footer__contact-email">
+            <div class="footer__contact-email-title">email</div>
+            <a href="mailto:hello@everypay.io" class="footer__contact-email-value">hello@everypay.io</a>
+          </div>
+        </div>
+        <form class="footer__contact-form" action="#">
+          <input type="text" class="input input--white" placeholder="Ваше имя*" required>
+          <input type="email" class="input input--white" placeholder="Email*" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+          <textarea class="textarea" placeholder="Расскажите о своей компании*" required rows="2"></textarea>
+          <button class="footer__contact-btn btn btn--blue">Подключиться</button>
+        </form>
+      </div>
+      <div class="footer__rights">
+        <div class="footer__copyright">© 2022, Everypay</div>
+        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__text">
+      <p>Спасибо!<br> Мы приняли ваш запрос.</p>
+      <p>В ближайшее время наш специалист поддержки свяжется с вами.</p>
+    </div>
+  </div>
+
+  <div class="up">
+    <img src="assets/images/static/up.svg" alt="Up">
+  </div>
+
+  <script src="assets/js/index.min.js"></script>
+
+</body>
+
+</html>

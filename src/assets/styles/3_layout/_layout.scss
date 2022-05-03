@@ -1,0 +1,282 @@
+@use "sass:math";
+
+main {
+	position: relative;
+	overflow-anchor: none;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+	flex-wrap: wrap;
+	padding: 0 1.3%;
+
+	&--nowrap {
+		flex-wrap: nowrap;
+	}
+
+	&--center {
+		justify-content: center;
+	}
+}
+
+.hide-xs {
+    display: none;
+}
+
+.show-xs {
+    display: flex;
+}
+
+.block-xs {
+    display: block;
+}
+
+
+@for $i from 1 to 13 {
+	.col-#{$i} {
+		width: #{math.div(100%, 12) * $i};
+		padding: 0 .7%;
+	}
+
+	.offset-#{$i} {
+		margin-left: #{math.div(100%, 12) * $i};
+	}
+}
+
+@media (min-width: map-get($mobile, sm)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-xs {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 2.5%;
+		}
+
+		.offset-#{$i}-xs {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+
+	}
+			
+	.offset-0-xs {
+		margin-left: 0;
+	}
+
+}
+
+@media (min-width: map-get($tablet, sm)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-sm {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 2.5%;
+		}
+		.offset-#{$i}-sm {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-sm {
+		margin-left: 0;
+	}
+
+	.hide-sm {
+		display: none;
+	}
+
+	.show-sm {
+		display: flex;
+	}
+
+	.block-sm {
+		display: block;
+	}
+}
+
+@media (min-width: map-get($tablet, md)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-s {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 2.5%;
+		}
+		.offset-#{$i}-s {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-s {
+		margin-left: 0;
+	}
+
+	.hide-s {
+		display: none;
+	}
+
+	.show-s {
+		display: flex;
+	}
+
+	.block-s {
+		display: block;
+	}
+}
+
+@media (min-width: map-get($tablet, lg)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-md {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 .7%;
+		}
+
+		.offset-#{$i}-md {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-md {
+		margin-left: 0;
+	}
+
+	.hide-md {
+		display: none;
+	}
+
+	.show-md {
+		display: flex;
+	}
+
+	.block-md {
+		display: block;
+	}
+}
+
+@media (min-width: map-get($laptop, sm)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-lg {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 .7%;
+		}
+
+		.offset-#{$i}-lg {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-lg {
+		margin-left: 0;
+	}
+
+	.hide-lg {
+		display: none;
+	}
+
+	.show-lg {
+		display: flex;
+	}
+
+	.block-lg {
+		display: block;
+	}
+}
+
+
+@media (min-width: map-get($laptop, md)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-old {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 .7%;
+		}
+
+		.offset-#{$i}-old {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-mac {
+		margin-left: 0;
+	}
+
+	.hide-old {
+		display: none;
+	}
+
+	.show-old {
+		display: flex;
+	}
+
+	.block-old {
+		display: block;
+	}
+}
+
+@media (min-width: map-get($laptop, lg)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-xl {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 .7%;
+		}
+
+		.offset-#{$i}-xl {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-xl {
+		margin-left: 0;
+	}
+
+	.hide-xl {
+		display: none;
+	}
+
+	.show-xl {
+		display: flex;
+	}
+
+	.block-xl {
+		display: block;
+	}
+}
+
+@media (min-width: map-get($laptop, hd)) {
+
+	@for $i from 1 to 13 {
+		.col-#{$i}-hd {
+			width: #{math.div(100%, 12) * $i};
+			padding: 0 .7%;
+		}
+
+		.offset-#{$i}-hd {
+			margin-left: #{math.div(100%, 12) * $i};
+		}
+	}
+
+	.offset-0-hd {
+		margin-left: 0;
+	}
+
+	.hide-hd {
+		display: none;
+	}
+
+	.show-hd {
+		display: flex;
+	}
+
+	.block-hd {
+		display: block;
+	}
+}
+
+
+@media (max-width: map-get($tablet, lg) - 1) {
+
+    .row {
+        padding: 0 1.5%;
+    }
+}
